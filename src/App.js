@@ -26,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     backgroundImage: `url('/static/images/dialog_bg.png')`,
     backgroundSize: 'cover',
+    backgroundColor: 'black',
   },
   background: {
     backgroundImage: `url('/static/images/bg.png')`,
@@ -54,6 +55,18 @@ const useStyles = makeStyles((theme) => ({
     border: 'none',
     padding: 0,
   },
+  hoverMenu: {
+    position: "fixed", 
+    right: -80, 
+    width: 100, 
+    height: 100, 
+    top: "50%", 
+    background: "white",
+    '&:hover': {
+      transition: "transform 0.3s linear",
+      transform: `translate(-80px, 0)`,
+    },
+  }
 }));
 
 function App() {
@@ -128,11 +141,8 @@ function App() {
     <>
       <div className={classes.background} />
       <div className={classes.root}>
-        <div>
-          <button onClick={handleReset}>초기화</button>
-          <button onClick={() => handleMax(1)}>+</button>
-          <button onClick={() => handleMax(-1)}>-</button>
-        </div>
+        <div style={{ fontFamily: "'Nanum Gothic', sans-serif", position: "absolute", color: "white", right: 14, top: 169, fontSize: 11 }}>성공 확률 <span style={{ color: "yellow" }}>{percent}%</span></div>
+        <div style={{ position: "absolute", color: "white", right: 14, top: 322, fontSize: 11 }}>균열 확률 <span style={{ color: "yellow" }}>{percent}%</span></div>
         <div>
           {_.range(3).map(idx => (
             <div
@@ -142,6 +152,14 @@ function App() {
               <img
                 style={{ height: '100%', }}
                 src={'/static/images/icon_' + (idx == 2 ? 'bad' : 'good') + '.png'} />
+              <div
+                style={{ width: 272, position: "absolute", height: 25, left: 69, bottom: 36, backgroundSize: "cover",
+                backgroundImage: `url(${'/static/images/bar_' + (idx == 2 ? 'bad' : 'good') + '.png'})` }}
+                >
+                <div style={{ color: "#B7D6F0", top: 3, fontSize: 14, left: 10, position: "absolute" }}>
+                  원한
+                </div>
+              </div>
               <div className={classes.socketContainer}>
                 {printResult(idx)}
               </div>
@@ -158,6 +176,12 @@ function App() {
           ))}
         </div>
         <div>성공확률: {percent}%</div>
+      </div>
+      <div className={classes.hoverMenu}>
+        메뉴
+        <button onClick={handleReset}>초기화</button>
+        <button onClick={() => handleMax(1)}>+</button>
+        <button onClick={() => handleMax(-1)}>-</button>
       </div>
     </>
   );
