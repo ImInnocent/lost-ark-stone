@@ -1,20 +1,15 @@
 {
-  "short_name": "Lost Ark Stone",
-  "name": "Lost Ark Stone Simulator",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo.png",
-      "type": "image/png",
-      "sizes": "192x192 512x512"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "name": "로아 돌깎깎",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "로스트 아크 어빌리티 스톤을 깎아보세요!",
+  "icons": {
+    "192": "logo.png"
+  },
+  "permissions": ["storage"],
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_popup": "popup.html"
+  },
+  "options_page": "index.html"
 }

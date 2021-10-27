@@ -12,7 +12,6 @@ const DIALOG_LEFT = 18;
 
 const ROW_TOP = [186, 247, 340];
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     width: BG_WIDTH * ratio,
@@ -69,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-function App() {
+export default function App() {
   const classes = useStyles();
 
   const percent_up = 10;
@@ -186,5 +185,3 @@ function App() {
     </>
   );
 }
-
-export default App;
