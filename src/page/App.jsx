@@ -61,9 +61,9 @@ const useStyles = makeStyles((theme) => ({
   },
   hoverMenu: {
     position: "fixed", 
-    right: -150, 
-    width: 200, 
-    height: 200, 
+    right: -225, 
+    width: 300, 
+    height: 300, 
     top: "50%", 
     transform: 'translate(0, -50%)',
     zIndex: 10,
@@ -71,12 +71,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "cover",
     '&:hover': {
       transition: "transform 0.3s linear",
-      transform: `translate(-150px, -50%)`,
+      transform: `translate(-225px, -50%)`,
     },
   },
   menuBox: {
     position: 'absolute',
-    left: 60,
+    left: 85,
     top: 10,
     width: 150,
     height: 180,
