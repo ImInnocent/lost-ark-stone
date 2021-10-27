@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# 로아 돌깎깎
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 뭐하는 서비스인가요?
+온라인게임 '로스트 아크'의 어빌리티 스톤을 세공할 수 있는 서비스입니다.
+확률을 직접 체감해보세요.
 
-## Available Scripts
+#### 로아 돌깎깎의 장점은 무엇인가요?
+크롬 확장 프로그램을 이용해서 언제나 빠르게 창을 열 수 있고, 이미지로 구성되어 있기 때문에 몰입도 높은 돌깎기를 할 수 있습니다.
 
-In the project directory, you can run:
+#### 어떻게 빠르게 사이트에 접속할 수 있나요?
+크롬 우측 상단의 퍼즐모양 이미지를 선택하신 후, 로아 돌깎깎 옆의 핀을 눌러주세요.<br/>
+로아 돌깎깎이 고정되면, 아이콘을 클릭후 팝업을 클릭하시면 사이트로 이동됩니다.
 
-### `yarn start`
+![화면1] https://github.com/ImInnocent/lost-ark-stone/blob/master/store/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B72.png
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### 5개짜리만 가능한가요?
+아니요! 화면 오른쪽 '메뉴'에 마우스를 올려서 메뉴창을 꺼내서 슬롯 개수를 조정하면 됩니다.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### 다시 깎고 싶어요!
+화면 오른쪽 '메뉴'에 마우스를 올려서 메뉴창을 꺼내고, 초기화 아래에 있는 '실행'버튼을 누르세요!
 
-### `yarn test`
+## 기술 관련
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Github Link
+https://github.com/ImInnocent/lost-ark-stone
 
-### `yarn build`
+### 주요 패키지들
+__React__: 17.0.2 이상<br/>
+__MUI__: 5.0.5 이상<br/>
+__lodash__: 4.17.21 이상
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 기술 스택
+__클라이언트 프레임워크__: React<br/>
+__클라이언트 UI__: HTML + CSS + MaterialUI (MUI)<br/>
+__빌드__: Webpack + Customize-cra<br/>
+__배포__: Chrome Extension
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 프로젝트 빌드 방법
+```
+# 프로젝트 클론
+git clone https://github.com/ImInnocent/lost-ark-stone
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+cd lost-ark-stone
 
-### `yarn eject`
+# 패키지 설치
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# 빌드 (/build 폴더에 생성)
+yarn build
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# 빌드 + 실행 (/dist 폴더에 생성)
+yarn start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Trouble Shooting
+copy-webpack-plugin이 7.0.0버전 이상부터 getCache함수를 지원하지 않기 때문에, 이전버전인 6.3.2버전을 설치해야 한다.<br/>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://forum.framework7.io/t/fresh-create-project-not-working/12657
