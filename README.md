@@ -11,7 +11,7 @@
 크롬 우측 상단의 퍼즐모양 이미지를 선택하신 후, 로아 돌깎깎 옆의 핀을 눌러주세요.<br/>
 로아 돌깎깎이 고정되면, 아이콘을 클릭후 팝업을 클릭하시면 사이트로 이동됩니다.
 
-![화면1] https://github.com/ImInnocent/lost-ark-stone/blob/master/store/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B72.png
+![화면1](https://github.com/ImInnocent/lost-ark-stone/blob/master/store/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B72.png)
 
 #### 5개짜리만 가능한가요?
 아니요! 화면 오른쪽 '메뉴'에 마우스를 올려서 메뉴창을 꺼내서 슬롯 개수를 조정하면 됩니다.
