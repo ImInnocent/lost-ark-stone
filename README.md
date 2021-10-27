@@ -1,5 +1,7 @@
 # 로아 돌깎깎
 
+<img src="https://github.com/ImInnocent/lost-ark-stone/blob/master/store/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20(1).png" width="640" /> 
+
 ## 뭐하는 서비스인가요?
 온라인게임 '로스트 아크'의 어빌리티 스톤을 세공할 수 있는 서비스입니다.
 확률을 직접 체감해보세요.
@@ -11,7 +13,7 @@
 크롬 우측 상단의 퍼즐모양 이미지를 선택하신 후, 로아 돌깎깎 옆의 핀을 눌러주세요.<br/>
 로아 돌깎깎이 고정되면, 아이콘을 클릭후 팝업을 클릭하시면 사이트로 이동됩니다.
 
-![화면1](https://github.com/ImInnocent/lost-ark-stone/blob/master/store/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B72.png)
+<img src="https://github.com/ImInnocent/lost-ark-stone/blob/master/store/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B72.png" width="640" /> 
 
 #### 5개짜리만 가능한가요?
 아니요! 화면 오른쪽 '메뉴'에 마우스를 올려서 메뉴창을 꺼내서 슬롯 개수를 조정하면 됩니다.
@@ -19,7 +21,7 @@
 #### 다시 깎고 싶어요!
 화면 오른쪽 '메뉴'에 마우스를 올려서 메뉴창을 꺼내고, 초기화 아래에 있는 '실행'버튼을 누르세요!
 
-## 기술 관련
+# 기술 관련
 
 ### Github Link
 https://github.com/ImInnocent/lost-ark-stone
