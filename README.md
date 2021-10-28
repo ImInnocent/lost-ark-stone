@@ -2,6 +2,8 @@
 
 <img src="https://github.com/ImInnocent/lost-ark-stone/blob/master/store/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20(1).png" width="640" /> 
 
+https://chrome.google.com/webstore/detail/%EB%A1%9C%EC%95%84-%EB%8F%8C%EA%B9%8E%EA%B9%8E/lpkpcoigdpjnkjiehbeimlhadbdbkkji?hl=ko
+
 ## 뭐하는 서비스인가요?
 온라인게임 '로스트 아크'의 어빌리티 스톤을 세공할 수 있는 서비스입니다.
 확률을 직접 체감해보세요.
